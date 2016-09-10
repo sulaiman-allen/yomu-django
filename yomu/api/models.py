@@ -12,5 +12,13 @@ class Album(models.Model):
         return "{}: {}".format(self.rfid, self.title)
 
     def __unicode__(self):
-        return "{}: {}".format(self.rfid, self.name)
+        return "{}: {}".format(self.rfid, self.title)
 
+class CurrentRfid(models.Model):
+    rfid = models.CharField(max_length=10, null=True)
+
+    def __str__(self):
+        return "{}: {}".format(self.id, self.rfid)
+
+    def __unicode__(self):
+        return "{}: {}".format(self.id, self.rfid)
