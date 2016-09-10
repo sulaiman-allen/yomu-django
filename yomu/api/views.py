@@ -10,3 +10,4 @@ from api.serializers import AlbumSerializer
 class AlbumList(viewsets.ModelViewSet):
     queryset = Album.objects.all()
     serializer_class = AlbumSerializer
+    lookup_field = 'rfid'
