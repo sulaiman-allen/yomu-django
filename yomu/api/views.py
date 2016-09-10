@@ -8,5 +8,5 @@ from api.serializers import AlbumSerializer
 # Create your views here.
 
 class AlbumList(viewsets.ModelViewSet):
-    queryset = Album.Albumobjects.all()
+    queryset = Album.objects.all()
     serializer_class = AlbumSerializer

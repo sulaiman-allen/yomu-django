@@ -5,7 +5,7 @@ from api import views
 
 
 router = routers.DefaultRouter()
-router.register(r'albums', views.Album)
+router.register(r'albums', views.AlbumList)
 
 urlpatterns = [
     url(r'^', include(router.urls)),
